@@ -1,0 +1,26 @@
+body{
+  background-color: #000;
+}
+
+h1{
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  font-family: 'Papyrus',  cursive;
+}
+
+#canvas{
+  background-color: #960909;
+  border: 2px solid orange;
+  position: absolute;
+  margin: 100px 0 auto 290px;
+  z-index: 1;
+}
+
+#leftbutton{
+  margin: 200px 0px 0 170px;
+}
+
+#rightbutton{
+  margin: 200px auto 0 850px;
+}
