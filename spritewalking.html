@@ -42,7 +42,7 @@
 
       var currentFrame = 0;
       var character = new Image();
-      character.src = 'images/NinjaAttack.png';
+      character.src = 'images/NinjaAttack2.png';
 
       var speed = 5;
       var canvas = document.getElementById('canvas');
@@ -71,10 +71,6 @@
         }
       }
 
-      if (event.keyCode == 65) moveLeft();
-      else if (event.keyCode == 68) moveRight();
-
-      var axis = right - left;
 
       function updateFrame(){
           if (left === true) {
