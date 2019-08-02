@@ -5,11 +5,12 @@
     <title>Absolutely FURIOUS Ninja Man</title>
     <link rel="stylesheet" href="css/spritewalking.css">
   </head>
-  <body>
+  <body >
     <canvas id='canvas'></canvas>
     <h1>Absolutely FURIOUS Ninja Man</h1>
-    <button id='leftbutton' onclick='moveLeft()'>Left</button>
-    <button id='rightbutton' onclick='moveRight()'>Right</button>
+    <body onkey="moveLeft(event); moveRight(event)">
+  <!--  <button id='leftbutton' onclick='moveLeft()'>Left</button>
+    <button id='rightbutton' onclick='moveRight()'>Right</button> -->
     <script>
 
       var canWidth = 700;
@@ -56,14 +57,18 @@
         input = event.code;
       }, true);*/
 
-      function moveRight(){
-        left = false;
-        right = true;
+      function moveRight(e){
+        if (e.keyCode == 39){
+          left = false;
+          right = true;
+        }
       }
 
-      function moveLeft(){
-        left = true;
-        right = false;
+      function moveLeft(e){
+        if (e.keyCode == 37){
+          left = true;
+          right = false;
+        }
       }
 
       if (event.keyCode == 65) moveLeft();
